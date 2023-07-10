@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="input-section">
+  
+        <div class="input-field">
+          <div class="input-label-text" id="day">D A Y</div>
+          <input class="input-label" type="number" min="1" max="31" placeholder="DD" id="day-input">
+          <div class = "input-error">Must be a valid day</div>
+        </div>
+  
+        <div class="input-field">
+          <div class="input-label-text" id="month">M O N T H</div>
+          <input class="input-label" type="number" min="1" max="12" placeholder="MM" id="month-input">
+          <div class = "input-error">Must be a valid month</div>
+        </div>
+          
+        <div class="input-field">
+          <div class="input-label-text" id="year">Y E A R</div>
+          <input class="input-label" type="number" min="0" placeholder="YYYY" id="year-input">
+          <div class = "input-error">Must be in the past</div>
+        </div>
+      </div>
+  
+      <div class="power-button">
+        <div class="icon-position">
+          <div id="calculate-button" class="circle-for-result">
+            <img src="assets\images\icon-arrow.svg" id="arrow">
+          </div>
+        </div>
+        <hr class="horizontal-line">
+      </div>
+  
+      <div class="result-section">
+        <div id="result-text-one">
+          <p class="result-display">
+            <span id="result-year" class="result-display-dash">
+              --
+            </span> 
+            years
+          </p>
+        </div>
+  
+        <div id="result-text-two">
+          <p class="result-display">
+            <span id="result-month" class="result-display-dash">
+              --
+            </span>
+            months
+          </p>
+        </div>
+  
+        <div id="result-text-three">
+          <p class="result-display">
+            <span id="result-day" class="result-display-dash">
+              --
+            </span> 
+            days
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://hashnode.com/@jonahunuafe" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jonah Unuafe</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
