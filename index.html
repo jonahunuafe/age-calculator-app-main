@@ -11,26 +11,25 @@
   <main>
     <div class="container">
       <div class="input-section">
-  
         <div class="input-field">
           <div class="input-label-text" id="day">D A Y</div>
-          <input class="input-label" type="number" min="1" max="31" placeholder="DD" id="day-input">
+          <input class="input-label" id="day-input" type="number" min="1" max="31" placeholder="DD">
           <div class = "input-error">Must be a valid day</div>
         </div>
   
         <div class="input-field">
           <div class="input-label-text" id="month">M O N T H</div>
-          <input class="input-label" type="number" min="1" max="12" placeholder="MM" id="month-input">
+          <input class="input-label" id="month-input" type="number" min="1" max="12" placeholder="MM">
           <div class = "input-error">Must be a valid month</div>
         </div>
           
         <div class="input-field">
           <div class="input-label-text" id="year">Y E A R</div>
-          <input class="input-label" type="number" min="0" placeholder="YYYY" id="year-input">
+          <input class="input-label" id="year-input" type="number" min="1" placeholder="YYYY">
           <div class = "input-error">Must be in the past</div>
         </div>
       </div>
-  
+
       <div class="power-button">
         <div class="icon-position">
           <div id="calculate-button" class="circle-for-result">
@@ -39,7 +38,7 @@
         </div>
         <hr class="horizontal-line">
       </div>
-  
+      
       <div class="result-section">
         <div id="result-text-one">
           <p class="result-display">
@@ -67,9 +66,8 @@
             days
           </p>
         </div>
-        
       </div>
-    </div>
+    </div>  
   </main>
   
   <div class="attribution">
